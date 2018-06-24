@@ -12,9 +12,9 @@ $(document).ready(function () {
             var gifButton = $("<button>");
             gifButton.addClass("MovieStar");
             gifButton.addClass("btn btn-primary");
-            gifButton.attr("data-name", topic[i]);
-            gifButton.text(topic[i]);
-            $("$gifsView").append(gifButton);
+            gifButton.attr("data-name", topics[i]);
+            gifButton.text(topics[i]);
+            $("#gifsView").append(gifButton);
         }
     }
     
