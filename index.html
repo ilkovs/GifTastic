@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GifTastic</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/logic.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <i>Movie Stars</i>
+        </h1>
+    </div>
+    <div id="gifButton" class="container">
+    </div>
+
+    <div class="container">
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+
+            <div id="gifsView">
+            </div>
+        </div>
+
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <form id="gifForm" role="form">
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label for="topicInput">
+            <h3>
+                <i>Add your favorite Movie Star!</i>
+            </h3>
+        </label>
+        <input type="text" id="topicInput">
+    </div>
+    <input id="addGif" type="submit" value="ADD" class="btn btn-primary">
+
+    <input id="removeGif" type="submit" value="REMOVE" class="btn btn-primary">
+    </form>
+
+</body>
+
+</html>

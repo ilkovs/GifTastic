@@ -1,0 +1,12 @@
+body {
+    background-image: url("../images/starry-sky.gif");
+}
+
+h1 {
+    text-align: center;
+    color: white !important;
+}
+
+h3 {
+    color: white !important;
+}
