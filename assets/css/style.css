@@ -10,3 +10,19 @@ h1 {
 h3 {
     color: white !important;
 }
+
+button {
+    word-spacing: 5px;
+    margin: 10px 5px !important;
+}
+
+div1 {
+	display: inline-block;
+	float: left;
+	margin: 10px;
+}
+
+p {
+    color: white;
+}
+
