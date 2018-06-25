@@ -80,7 +80,7 @@ $(document).ready(function () {
                 gifImage.attr("data-still", results[i].images.fixed_height_small_still.url);
 
                 // animated images
-                gifImage.attr("data-animate", results[i].images.fixed_height_small_still.url);
+                gifImage.attr("data-animate", results[i].images.fixed_height_small.url);
 
                 // requested images are paused upon coming
                 gifImage.attr("data-state", "still");
