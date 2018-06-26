@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     // Array of Movie Stars to begin with
 
-    var topics = ["Will Smith", "Mel Gibson", "Samuel Jackson", "Scarlett Johansson", "Johnny Depp", "Robert Downey Jr", "Eddie Murphy", "Martin Lawrence", "Kevin Hart", "Charlize Theron"];
+    var topics = ["Will Smith", "Mel Gibson", "Samuel Jackson", "Scarlett Johansson", "Robert Downey Jr", "Martin Lawrence", "Kevin Hart", "Charlize Theron"];
 
     //Display the gif buttons
 
@@ -37,7 +37,7 @@ $(document).ready(function () {
 
     function removeButton() {
         $("#removeGif").on("click", function () {
-            topic.pop(MovieStar);
+            topics.pop(MovieStar);
             displayButtons();
             return false;
         })
@@ -55,8 +55,6 @@ $(document).ready(function () {
             url: queryURL,
             method: "GET"
         }).then(function (response) {
-            $("#gifsView").empty();
-
             // Results
             //put GIFs in a div
 
@@ -88,7 +86,7 @@ $(document).ready(function () {
                 gifDiv.append(gifImage);
 
                 // add new div
-                $("#gifsView").prepend(gifDiv);
+                $("#gifsView").append(gifDiv);
             }
         });
     }
